@@ -3,9 +3,6 @@ import PillShapeBox from "../components/PillShapedBox";
 import BackGroundCircle from "../components/BackGroundCircle";
 import BigCircle from "../components/BigCircle";
 import FuncIntroduction from "../components/FuncIntroduction";
-import { Phone1 } from "../components/Phone";
-import { Phone2 } from "../components/Phone";
-import { Phone3 } from "../components/Phone";
 
 export default function Function() {
   return (
@@ -43,13 +40,21 @@ export default function Function() {
               一覧で表示されます。`}
           />
 
-          <Phone1 />
+          <img
+            src="/img/func1.png"
+            alt="func1"
+            style={{ width: "500px", height: "auto" }}
+          ></img>
         </div>
       </div>
       {/*3ページ目*/}
       <div className="min-h-screen">
         <div className="flex justify-end gap-20 mt-10 mr-30">
-          <Phone2 />
+          <img
+            src="/img/func2.png"
+            alt="func2"
+            style={{ width: "500px", height: "auto" }}
+          ></img>
 
           <FuncIntroduction
             color="bg-orange-100"
@@ -66,11 +71,14 @@ export default function Function() {
             color="bg-white"
             text1="機能３"
             text2={`縦・横スクロール可能な
-「トラック」タブで読書の進捗を
-一目で比較`}
-            className="shadow-md"
+              「トラック」タブで読書の進捗を
+              一目で比較`}
           />
-          <Phone3 />
+          <img
+            src="/img/func3.png"
+            alt="func3"
+            style={{ width: "500px", height: "auto" }}
+          ></img>
         </div>
       </div>
     </>

@@ -1,28 +1,22 @@
 import Bar from "./Bar";
 import BigCircle from "./BigCircle";
 
-type FuncIntroductionProps = {
+type Props = {
   color: string;
   text1: string;
   text2: string;
   className?: string;
 };
 
-export default function FuncIntroduction({
-  color,
-  text1,
-  text2,
-  className,
-}: FuncIntroductionProps) {
+export default function FuncIntroduction(props: Props) {
   return (
     <div className="relative flex flex-col">
-      <div className="absolute top-20 left-22">
-        <p>
-          <Bar text={text1} />
-        </p>
-      </div>
+      <p className="absolute top-20 left-22">
+        <Bar text={props.text1} />
+      </p>
+
       <p>
-        <BigCircle text={text2} color={color} className={className || ""} />
+        <BigCircle text={props.text2} color={props.color} />
       </p>
     </div>
   );
