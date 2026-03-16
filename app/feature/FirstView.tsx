@@ -4,8 +4,8 @@ export default function FirstView() {
   return (
     <>
       <div className="flex justify-between min-h-screen">
-        {/*左上の穴あきマル*/}
         <div>
+          {/*左上の穴あきマル*/}
           <div className="w-72 h-60 rounded-br-full bg-orange-500" />
           <div className="pl-50 pt-5">
             <h1 className="text-4xl">読書管理アプリ</h1>
