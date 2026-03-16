@@ -5,7 +5,6 @@ type Props = {
   color: string;
   text1: string;
   text2: string;
-  className?: string;
 };
 
 export default function FuncIntroduction(props: Props) {
