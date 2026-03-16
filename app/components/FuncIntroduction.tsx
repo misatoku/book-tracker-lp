@@ -10,13 +10,13 @@ type Props = {
 export default function FuncIntroduction(props: Props) {
   return (
     <div className="relative flex flex-col">
-      <p className="absolute top-20 left-22">
+      <div className="absolute top-20 left-22">
         <Bar text={props.text1} />
-      </p>
+      </div>
 
-      <p>
+      <div>
         <BigCircle text={props.text2} color={props.color} />
-      </p>
+      </div>
     </div>
   );
 }
