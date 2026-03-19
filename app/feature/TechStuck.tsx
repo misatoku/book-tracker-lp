@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "motion/react";
+
 export default function TechStuck() {
   return (
     <>
@@ -25,26 +29,47 @@ export default function TechStuck() {
               <p className="font-bold text-3xl text-orange-500">
                 フロントエンド
               </p>
-              <img
-                src="/img/ReactNative+Expo.png"
-                alt="ReactNative+Expo"
-                style={{ width: "300px", height: "auto" }}
-                className="pt-10"
-              />
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: false }}
+              >
+                <img
+                  src="/img/ReactNative+Expo.png"
+                  alt="ReactNative+Expo"
+                  style={{ width: "300px", height: "auto" }}
+                  className="pt-10"
+                />
+              </motion.div>
             </div>
             <div className="flex flex-col justify-cener items-center">
               <p className="font-bold text-3xl text-orange-500">バックエンド</p>
-              <img
-                src="/img/GO.png"
-                alt="GO"
-                style={{ width: "300px", height: "auto" }}
-                className="pt-10"
-              />
-              <img
-                src="/img/PostgreSQL.png"
-                alt="PostgreSQL"
-                style={{ width: "300px", height: "auto" }}
-              />
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                viewport={{ once: false }}
+              >
+                <img
+                  src="/img/GO.png"
+                  alt="GO"
+                  style={{ width: "300px", height: "auto" }}
+                  className="pt-10"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                viewport={{ once: false }}
+              >
+                <img
+                  src="/img/PostgreSQL.png"
+                  alt="PostgreSQL"
+                  style={{ width: "300px", height: "auto" }}
+                />
+              </motion.div>
             </div>
           </div>
         </div>
