@@ -44,7 +44,7 @@ export default function Function() {
             src="/img/func1.png"
             alt="func1"
             style={{ width: "500px", height: "auto" }}
-          ></img>
+          />
         </div>
       </div>
       {/*3ページ目*/}
@@ -54,7 +54,7 @@ export default function Function() {
             src="/img/func2.png"
             alt="func2"
             style={{ width: "500px", height: "auto" }}
-          ></img>
+          />
 
           <FuncIntroduction
             color="bg-orange-100"
@@ -65,10 +65,10 @@ export default function Function() {
         </div>
       </div>
       {/*4ページ目*/}
-      <div className="min-h-screen bg-orange-100">
+      <div className="min-h-screen">
         <div className="flex gap-20 pt-20 ml-30">
           <FuncIntroduction
-            color="bg-white"
+            color="bg-orange-100"
             text1="機能３"
             text2={`縦・横スクロール可能な
               「トラック」タブで読書の進捗を
@@ -78,7 +78,7 @@ export default function Function() {
             src="/img/func3.png"
             alt="func3"
             style={{ width: "500px", height: "auto" }}
-          ></img>
+          />
         </div>
       </div>
     </>
