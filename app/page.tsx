@@ -1,6 +1,7 @@
 import FirstView from "./feature/FirstView";
 import Function from "./feature/Function";
 import TechStuck from "./feature/TechStuck";
+import Trigger from "./feature/Trigger";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
         </section>
         <section className="min-h-screen">
           <TechStuck />
+        </section>
+        <section className="min-h-screen mt-3.5">
+          <Trigger />
         </section>
       </main>
     </>
