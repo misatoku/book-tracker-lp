@@ -1,9 +1,9 @@
 import PillShapedBox from "./PillShapedBox";
 
 export type AddSectionProps = {
-  text: string;
+  text: string; // こっちは中身だけ
   number: number;
-  description: React.ReactNode;
+  description: React.ReactNode; //これでタグごと受け渡せる
   img: React.ReactNode;
 };
 

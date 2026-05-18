@@ -11,12 +11,8 @@ export default function FirstView() {
             <h1 className="text-4xl">読書管理アプリ</h1>
             <h1 className="text-7xl text-orange-500">Book Tracker</h1>
             <div className="mt-5">
-              <h1 className="text">
-                理工学部 コンピュータ科学専攻 2年 澤野そら
-              </h1>
-              <h1 className="text">
-                理工学部 コンピュータ科学専攻 1年 桑原美智
-              </h1>
+              <h1 className="text"></h1>
+              <h1 className="text"></h1>
             </div>
           </div>
         </div>
